@@ -48,16 +48,7 @@
                     <button>Rechercher</button>
                 </div>
                 <div class="list_users">
-                    <a href="#">
-                        <div class="content">
-                            <img src="images/default.jpg" alt="">
-                            <div class="details">
-                                <span>Farid SAD SAOUD</span>
-                                <p class="txt">Text message</p>
-                            </div>
-                        </div>
-                        <div class="status-dot"><i class="fas fa-circle"></i></div>
-                    </a>
+                    
                 </div>
             </div>
             <div class="chat">
@@ -93,5 +84,6 @@
             </div>
         </div>
     </div>
+    <script src="Js/users.js"></script>
 </body>
 </html>
