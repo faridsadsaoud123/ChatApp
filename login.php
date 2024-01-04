@@ -34,45 +34,46 @@
                     <header>Se connecter</header>
                     <div class="field">
                         <label>Email :</label>
-                        <input type="email" placeholder="example@exmple.com">
+                        <input type="email" name="emailC" placeholder="example@exmple.com">
                     </div>
                     <div class="field">
                         <label>Mot de passe :</label>
-                        <input type="password" placeholder="Entrez votre mot de passe">
+                        <input type="password" name="mdpC" placeholder="Entrez votre mot de passe">
                     </div>
-                    <div class="field submit">
+                    <div class="field submit connecter">
                         <input type="submit" value="Se connecter">
                     </div>
                 </form>
             </div>
             <div class="form signupForm">
-                <form action="#">
+                <form action="#" enctype="multipart/form-data">
                     <header>Créer un compte</header>
                     <div class="field">
                         <label>Nom :</label>
-                        <input type="text" placeholder="Entrez votre nom">
+                        <input type="text" name="nom" placeholder="Entrez votre nom" required>
                     </div>
                     <div class="field">
                         <label>Prénom :</label>
-                        <input type="text" placeholder="Entrez votre prénom">
+                        <input type="text" name="prenom" placeholder="Entrez votre prénom" required>
                     </div>
                     <div class="field">
                         <label>Email :</label>
-                        <input type="text" placeholder="example@example.com">
+                        <input type="text" name="email" placeholder="example@example.com" required>
                     </div>
                     <div class="field">
                         <label>Mot de passe :</label>
-                        <input type="password" placeholder="Entrer votre mot de passe">
+                        <input type="password" name ="mdp" placeholder="Entrer votre mot de passe" required>
                     </div>
-                    <div  class="field submit">
+                    <div  class="field submit inscrire">
                         <input type="submit" value="S'inscrire">
-
                     </div>
     
                 </form>
             </div>
         </div>
     </div>
-    <script src="/Js/script.js"></script>
+    <script src="Js/script.js"></script>
+    <script src="Js/inscription.js"></script>
+    <script src="Js/connexion.js"></script>
 </body>
 </html>
