@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Css/login.css">
+    <link rel="stylesheet" href="Css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
     <title>NexoTalk</title>
 </head>
 <body>
     <header class="logo">
-        
         <span class="image">
-            <img src="/logo.png" alt="">
+            <img src="images/logo.png" alt="">
         </span>
         <span class="slogan">
             <div class="slog">NexoTalk</div>
@@ -39,7 +37,7 @@
                         <input type="email" placeholder="example@exmple.com">
                     </div>
                     <div class="field">
-                        <label>Mot de passe:</label>
+                        <label>Mot de passe :</label>
                         <input type="password" placeholder="Entrez votre mot de passe">
                     </div>
                     <div class="field submit">
@@ -75,6 +73,6 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/Js/script.js"></script>
 </body>
 </html>
