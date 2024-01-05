@@ -41,20 +41,21 @@
                             <p class="field actif"><?php echo $row['status'];?></p>
                         </div>
                     </div>
-                    <button class="logout">Déconnecter</button>
+                    <a href="php/logout.php?logout_id=<?php echo $row['unique_id']  ?>" class="logout">Déconnecter</a>
                 </header>
                 <div class="search">
                     <input type="text" placeholder="Rechercher par nom">
-                    <button>Rechercher</button>
+
                 </div>
                 <div class="list_users">
                     
                 </div>
             </div>
-            <div class="chat">
+            <div class="chat hidden">
+                
                 <div class="receiver">
                     <img src="images/default.jpg" alt="">
-                    <span>Farid SAD SAOUD</span>
+                    <span></span>
                     <div class="buttons">
                         <button class="call vocal">
                             <i class="fas fa-phone-alt"></i> 
@@ -66,24 +67,24 @@
                     
                 </div>
                 <div class="chatbox">
-                    <div class="chat outgoing">
-                        <div class="details">
-                            <p>vsvsvdvdsvd</p>
-                        </div>
-                    </div>
-                    <div class="chat incoming">
-                        <div class="details">
-                            <p>svvsdvsdvdsvxsssssssssssssscdsssssssssssssssss</p>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
                 <form action="#">
-                    <input type="text" placeholder="Ecrire votre message ici">
-                    <button type="submit"><i class="fab fa-telegram-plane"></i></button>
+                    <input type="text" class="message" placeholder="Ecrire votre message ici" name="message">
+                    <input type="text" class="out" name="outgoing_id" value="<?php echo $_SESSION['unique_id']; ?>" hidden>
+                    <input type="text" name="incoming_id" class="inc_msg" hidden>
+                    <button type="submit" class="subBtn"><i class="fab fa-telegram-plane"></i></button>
                 </form>
+            </div>
+            <div class="no">
+                <div>NexoTalk</div>
+                <p>Cliquer sur une discussion pour commencer</p>
             </div>
         </div>
     </div>
     <script src="Js/users.js"></script>
+    <script src="Js/chat.js"></script>
+    
 </body>
 </html>

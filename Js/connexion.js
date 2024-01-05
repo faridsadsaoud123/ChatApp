@@ -1,6 +1,6 @@
 const formC = document.querySelector(".signinForm form");
 const submitC = document.querySelector(".connecter");
-console.log(submitC);
+
 formC.addEventListener("submit",(e)=>{
     e.preventDefault();
 })
